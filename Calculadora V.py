@@ -34,10 +34,9 @@ class Calc():
         if self.input_value:
             self.current = secondnum
             self.input_value = False
+        elif secondnum == "." and secondnum in firstnum:
+            return
         else:
-            if secondnum == ".":
-                if secondnum in firstnum:
-                    return
             self.current = firstnum + secondnum
         self.display(self.current)
 
@@ -57,14 +56,14 @@ class Calc():
     def valid_function(self):
         if self.op == "add":
             self.total += self.current
-        if self.op == "sub":
-            self.total -= self.current
-        if self.op == "multi":
-            self.total *= self.current
-        if self.op == "divide":
+        elif self.op == "divide":
             self.total /= self.current
-        if self.op == "mod":
+        elif self.op == "mod":
             self.total %= self.current
+        elif self.op == "multi":
+            self.total *= self.current
+        elif self.op == "sub":
+            self.total -= self.current
         self.input_value = True
         self.check_sum = False
         self.display(self.total)
@@ -169,7 +168,7 @@ class Calc():
         turtle.forward(200)
         turtle.goto(0, 0)
         for i in range(-10, 10):
-            funcion_replace = function.replace("x", "*"+str(i))
+            funcion_replace = function.replace("x", f"*{str(i)}")
             y = eval(funcion_replace)
             y *= 10
             i_new = i * 10
