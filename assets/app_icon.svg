@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Scientific calculator icon">
+  <rect width="256" height="256" rx="36" fill="#171717"/>
+  <rect x="38" y="34" width="180" height="188" rx="24" fill="#f4f4f4"/>
+  <rect x="58" y="54" width="140" height="46" rx="10" fill="#1f6f5b"/>
+  <path d="M70 78h48l16-16 24 4 18 12h16" fill="none" stroke="#d6ffe8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#303030">
+    <rect x="58" y="122" width="30" height="24" rx="6"/>
+    <rect x="102" y="122" width="30" height="24" rx="6"/>
+    <rect x="146" y="122" width="30" height="24" rx="6"/>
+    <rect x="58" y="160" width="30" height="24" rx="6"/>
+    <rect x="102" y="160" width="30" height="24" rx="6"/>
+    <rect x="146" y="160" width="30" height="24" rx="6"/>
+  </g>
+  <rect x="184" y="122" width="14" height="62" rx="7" fill="#d95f3d"/>
+  <rect x="160" y="192" width="38" height="14" rx="7" fill="#d95f3d"/>
+</svg>

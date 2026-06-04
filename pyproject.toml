@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scientific-graphing-calculator"
+version = "0.5.0"
+description = "A Tkinter scientific and graphing calculator with safe expression parsing."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "MikeGonzaBar" }]
+dependencies = [
+    "matplotlib>=3.8,<4",
+    "Pillow>=10,<12",
+]
+
+[project.optional-dependencies]
+packaging = [
+    "pyinstaller>=6,<7",
+]
+
+[project.scripts]
+scientific-calculator = "app:main"
+
+[tool.setuptools]
+py-modules = ["app", "calculator", "graphing", "graph_renderer"]
